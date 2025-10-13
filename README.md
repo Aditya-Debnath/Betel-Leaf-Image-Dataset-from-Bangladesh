@@ -1,1 +1,1 @@
-# CSE366-Mini-Project-using-CNN
+# Betel Leaf Image Dataset from Bangladesh
