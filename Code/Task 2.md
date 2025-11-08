@@ -1,4 +1,4 @@
-# CSE366/ICE476 Mini Project: Plant Leaf Disease Classification
+# CSE366/ICE476 Mini Project: Betel Leaf Disease Classification
 
 This repository contains the implementation and results for the Mini Project Assignment for the Artificial Intelligence course. The project aims to explore, compare, and identify the most effective deep learning methodology for classifying plant leaf diseases from a given image dataset.
 
