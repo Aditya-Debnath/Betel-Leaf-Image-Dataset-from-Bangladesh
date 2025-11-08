@@ -28,6 +28,7 @@ The dataset is balanced, with approximately 37-38 samples per class in the test 
 │   ├── densenet.ipynb
 │   ├── xception.ipynb
 │   └── alexnet.ipynb
+    ├── vgg.ipynb
 └── README.md
 ```
 
@@ -56,7 +57,7 @@ The performance of each model was evaluated on the test set. The key metrics are
 | EfficientNetB0  | 0.940         | 0.94                | 19.52               | No                       |
 | AlexNet         | 0.920         | 0.92                | 0.47                | No                       |
 | Xception        | 0.893         | 0.89                | 4.84                | **Yes**                  |
-
+| vgg             |0.907          | 0.91                | 2                   | Yes                      | 
 ---
 
 ### Analysis & Discussion
