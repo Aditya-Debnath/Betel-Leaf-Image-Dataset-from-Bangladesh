@@ -52,7 +52,7 @@ The performance of each model was evaluated on the test set. The key metrics are
 |-----------------|:-------------:|:-------------------:|:-------------------:|:------------------------:|
 | **InceptionV3**     | **0.960**     | **0.96**            | **2.56**            | **No**                       |
 | MobileNetV2     | 0.947         | 0.95                | 0.73                | No                       |
-| ResNet50        | 0.947         | 0.95                | 11.84               | No                       |
+| ResNet50        | 0.947         | 0.95                | 1.56                | **Yes**                  |
 | DenseNet 2.0    | 0.940         | 0.94                | 31.02               | **Yes**                  |
 | EfficientNetB0  | 0.940         | 0.94                | 19.52               | No                       |
 | AlexNet         | 0.920         | 0.92                | 0.47                | No                       |
