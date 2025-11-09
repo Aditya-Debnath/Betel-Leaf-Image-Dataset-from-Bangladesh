@@ -17,7 +17,7 @@ The project utilizes a dataset of plant leaf images, categorized into four disti
 The dataset is balanced, with approximately 37-38 samples per class in the test set.
 
 ## Repository Structure
-
+---
 ```
 .
 ├── code/
@@ -28,10 +28,12 @@ The dataset is balanced, with approximately 37-38 samples per class in the test 
 │   ├── densenet.ipynb
 │   ├── xception.ipynb
 │   └── alexnet.ipynb
-    ├── vgg16.ipynb
+├── images/
+│   ├── inceptionv3_results.png
+│   ├── densenet_finetuned_results.png
+│   └── inceptionv3_confusion_matrix.png
 └── README.md
 ```
-
 ---
 
 ## Task 2: Supervised Pre-trained Baselines
