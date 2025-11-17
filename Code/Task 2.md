@@ -50,16 +50,16 @@ As per the assignment requirements, a full fine-tuning protocol (freezing initia
 
 The performance of each model was evaluated on the test set. The key metrics are summarized in the table below.
 
-| Model Name      | Test Accuracy | F1-Score (Weighted) | Training Time (min) | Fine-Tuning Implemented? |
-|-----------------|:-------------:|:-------------------:|:-------------------:|:------------------------:|
-| **InceptionV3**     | **0.960**     | **0.96**            | **2.56**            | **No**                       |
-| MobileNetV2     | 0.947         | 0.95                | 0.73                | No                       |
-| ResNet50        | 0.947         | 0.95                | 1.56                | **Yes**                  |
-| DenseNet 2.0    | 0.940         | 0.94                | 31.02               | **Yes**                  |
-| EfficientNetB0  | 0.940         | 0.94                | 19.52               | No                       |
-| AlexNet         | 0.920         | 0.92                | 0.47                | No                       |
-| Xception        | 0.893         | 0.89                | 4.84                | **Yes**                  |
-| vgg16           |0.907          | 0.91                | 2                   | Yes                      | 
+| Model Name      | Test Accuracy | F1-Score (Weighted) | Training Time (min) | Fine-Tuning Implemented? | ROC Curve and AUC Score |
+|-----------------|:-------------:|:-------------------:|:-------------------:|:------------------------:|:------------------------|
+| **InceptionV3**     | **0.960**     | **0.96**            | **2.56**            | **No**                       | **Yes**         |
+| MobileNetV2     | 0.947         | 0.95                | 0.73                | No                       | No                      |
+| ResNet50        | 0.947         | 0.95                | 1.56                | **Yes**                  | **Yes**                 |
+| DenseNet 2.0    | 0.940         | 0.94                | 31.02               | **Yes**                  | No                      |
+| EfficientNetB0  | 0.940         | 0.94                | 19.52               | No                       | No                      |
+| AlexNet         | 0.920         | 0.92                | 0.47                | No                       | No                      |
+| Xception        | 0.893         | 0.89                | 4.84                | **Yes**                  | No                      |
+| vgg16           |0.907          | 0.91                | 2                   | Yes                      | **Yes**                 |
 ---
 
 ### Analysis & Discussion
