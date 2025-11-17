@@ -57,7 +57,7 @@ The performance of each model was evaluated on the test set. The key metrics are
 | ResNet50        | 0.947         | 0.95                | 1.56                | **Yes**                  | **Yes**                 |
 | DenseNet 2.0    | 0.940         | 0.94                | 31.02               | **Yes**                  | No                      |
 | EfficientNetB0  | 0.940         | 0.94                | 19.52               | No                       | No                      |
-| AlexNet         | 0.920         | 0.92                | 0.47                | No                       | No                      |
+| AlexNet         | 0.920         | 0.92                | 0.47                | **Yes**                  | No                      |
 | Xception        | 0.893         | 0.89                | 4.84                | **Yes**                  | No                      |
 | vgg16           |0.907          | 0.91                | 2                   | Yes                      | **Yes**                 |
 ---
