@@ -68,7 +68,7 @@ The performance of each model was evaluated on the test set. The key metrics are
 The **InceptionV3** model achieved the highest test accuracy of **96.0%** and a weighted F1-score of 0.96. Remarkably, it achieved this state-of-the-art result in just **2.56 minutes** and *without* the extended fine-tuning process. This suggests that the feature representations learned by the base InceptionV3 model are highly effective and generalizable to this specific dataset.
 
 ![InceptionV3 Performance Plots](./images/inceptionv3_results.png)
-*<p align="center">Figure 1: Training and validation curves for the top-performing InceptionV3 model.</p>*
+*<p align="center">Figure 1: Training and validation curves for the top-performing InceptionV3 model. (Old)</p>*
 
 **Fine-Tuning Impact: DenseNet**
 The DenseNet model, which underwent a full fine-tuning protocol, also achieved a strong accuracy of 94.0%. The training curves clearly show the two-stage process, with loss decreasing further after fine-tuning began. While effective, it was significantly more computationally expensive (31.02 minutes).
