@@ -27,8 +27,8 @@ The dataset is balanced, with approximately 37-38 samples per class in the test 
 │   ├── resnet50.ipynb
 │   ├── densenet.ipynb
 │   ├── xception.ipynb
-│   └── alexnet.ipynb
-     └── vgg16.ipynb
+│   ├── alexnet.ipynb
+    └── vgg16.ipynb
 ├── images/
 │   ├── inceptionv3_results.png
 │   ├── densenet_finetuned_results.png
