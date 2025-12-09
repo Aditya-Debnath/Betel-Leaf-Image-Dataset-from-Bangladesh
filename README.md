@@ -19,7 +19,9 @@ Dataset link : https://data.mendeley.com/datasets/g7fpgj57wc/2
 Performance Overview : We evaluated several state-of-the-art pre-trained deep learning models to identify the optimal architecture for this specific task of Betel leaf image dataset from Bangladesh.
 
 Tested Architectures 
+
 The following models were benchmarked:
+
 Alexnet
 
 DenseNet121
