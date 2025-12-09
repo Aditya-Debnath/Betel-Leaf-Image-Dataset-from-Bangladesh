@@ -40,10 +40,9 @@ Xception
 
 Methodology : To ensure robustness, each model was tested across a spectrum of data distributions. We utilized distinct Train-Test splits to validate generalizability, with a primary focus on the 70:30 distribution.
 
-Conclusion & Key Findings
-While several models showed strong performance, Inception proved to be the most effective model for our dataset, effectively distinguishing between fungal and bacterial patterns.
+Conclusion & Key Findings:
 
-Metric	Result
+While several models showed strong performance, Inception proved to be the most effective model for our dataset, effectively distinguishing between fungal and bacterial patterns.
 
 Best Model :	 InceptionV3
 
