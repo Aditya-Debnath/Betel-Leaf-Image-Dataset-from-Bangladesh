@@ -52,6 +52,47 @@ Best Split Ratio :	70:30
 
 Inception was selected for the final deployment due to its excellent balance of feature extraction capabilities and overall classification accuracy on the Betel leaf dataset.
 
-
-
-
+Repository Structure:
+Betel-Leaf-Image-Dataset-from-Bangladesh/
+│
+├── Code/                                       # Source code and Jupyter Notebooks
+│   | For Transfer Learning Models
+│   ├───inceptionv3.ipynb                   # 🏆 Best Performing Model (97%)
+│   ├── resnet50.ipynb                      # ResNet50 Implementation
+│   ├── mobilenetv2.ipynb                   # MobileNetV2 Implementation
+│   ├── densenet121.ipynb                   # DenseNet121 Implementation
+│   ├── vgg16.ipynb                         # VGG16 Implementation
+│   ├── xception.ipynb                      # Xception Implementation
+│   ├── alexnet.ipynb                       # AlexNet Implementation
+│   ├── efficientnetb0.ipynb                # EfficientNetB0 Implementation
+│   ├── efficientnetb0-v2.ipynb             # Improved EfficientNet variant
+│   │
+│   | For Custom & Attention Models
+│   ├── custom-cnn.ipynb                    # Task 3: Baseline Custom CNN
+│   ├── BLCNN.ipynb                         # Task 3: Betel Leaf Specific CNN
+│   ├── cbam-cnn.ipynb                      # Task 4: CNN with CBAM Attention
+│   ├── SE-ResNet.ipynb                     # Task 4: ResNet with Squeeze-and-Excitation
+│   ├── SE Custom CNN.ipynb                 # Task 4: Custom CNN with SE blocks
+│   ├── SE Custom CNN [Updated Plot].ipynb   # Updated plotting for SE model
+│   ├── Custom Hybrid CNN-Swin Transformer.ipynb # Task 4: Hybrid Transformer Model
+│   │
+│   | For Analysis & Utilities
+│   ├── EDA-betel-leaf-image-dataset-from-Bangladesh.ipynb # Exploratory Data Analysis for Task 1
+│   ├── Grad-CAM of Custom CNN.ipynb        # Model Interpretability/Visualization for Task 5
+│   ├── generalizability-testing-inceptionv3.ipynb # Robustness testing for Task 5
+│   ├── Paired-t-test-for-task-2.ipynb      # Statistical significance testing for Task 2
+│   ├── Task 2.md                           # Specific markdown report for Task 2
+│   │
+│   └── ├── images/                                     # Result visualizations for Task 2.md
+│       ├── inceptionv3_results.png
+│       ├── densenet_finetuned_results.png
+│       └── inceptionv3_confusion_matrix.png           
+│
+├── Report/                                    
+│   ├── Task1/                                  
+│   ├── Task2/                                 
+│   ├── Task3/                                  
+│   ├── Task4/                                  
+│   └── Report                                  
+│
+└── README.md                                   # Project Overview (This file)
