@@ -20,35 +20,35 @@ Performance Overview : We evaluated several state-of-the-art pre-trained deep le
 
 Tested Architectures 
 
-The following models were benchmarked:
+The following models were benchmarked and show their accuracy :
 
-Alexnet
+Alexnet : 92%
 
-DenseNet121
+DenseNet121 : 94%
 
-EfficientNet
+EfficientNet : 87%
 
-InceptionV3 
+InceptionV3 : 97%
 
-MobileNetV2
+MobileNetV2 : 94%
 
-VGG16
+VGG16 : 91%
 
-ResNet50
+ResNet50 : 95%
 
-Xception
+Xception : 89%
 
-Custom CNN
+Custom CNN : 90%
 
-BLCNN
+BLCNN : 88.70%
 
-CBAM-CNN
+CBAM-CNN : 97.33%
 
-SE-Resnet
+SE-Resnet : 88%
 
-SE-Custom CNN
+SE-Custom CNN : 95%
 
-Custom Hybrid CNN-Swin Transformer(winner)
+Custom Hybrid CNN-Swin Transformer (winner) : 98%
 
 Methodology : To ensure robustness, each model was tested across a spectrum of data distributions. We utilized distinct Train-Test splits to validate generalizability, with a primary focus on the 70:30 distribution.
 
@@ -63,4 +63,4 @@ Highest Accuracy :	98.00%
 
 Best Split Ratio :	70:30
 
-Inception was selected for the final deployment due to its excellent balance of feature extraction capabilities and overall classification accuracy on the Betel leaf dataset.
+Custom Hybrid CNN-Swin Transformer was selected for the final deployment due to its excellent balance of feature extraction capabilities and overall classification accuracy on the Betel leaf dataset.
