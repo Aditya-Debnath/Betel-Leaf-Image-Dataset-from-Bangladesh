@@ -28,7 +28,7 @@ DenseNet121
 
 EfficientNet
 
-InceptionV3 (Winner)
+InceptionV3 
 
 MobileNetV2
 
@@ -38,15 +38,28 @@ ResNet50
 
 Xception
 
+Custom CNN
+
+BLCNN
+
+CBAM-CNN
+
+SE-Resnet
+
+SE-Custom CNN
+
+Custom Hybrid CNN-Swin Transformer(winner)
+
 Methodology : To ensure robustness, each model was tested across a spectrum of data distributions. We utilized distinct Train-Test splits to validate generalizability, with a primary focus on the 70:30 distribution.
 
 Conclusion & Key Findings:
 
-While several models showed strong performance, Inception proved to be the most effective model for our dataset, effectively distinguishing between fungal and bacterial patterns.
+While several models showed strong performance, Custom Hybrid CNN-Swin Transformer proved to be the most effective model for our dataset.
 
-Best Model :	 InceptionV3
+Best Model :	 Custom Hybrid CNN-Swin Transformer
 
-Highest Accuracy :	97.00%
+
+Highest Accuracy :	98.00%
 
 Best Split Ratio :	70:30
 
