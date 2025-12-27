@@ -63,8 +63,3 @@ The models were evaluated based on Accuracy, F1-Score, and Training Time.
 ## 🧠 Explainable AI (XAI)
 We utilized **Grad-CAM** to verify that the models focus on the actual diseased regions of the leaf rather than background noise. The Hybrid Swin Transformer showed the most precise localization of necrotic spots and bacterial lesions.
 
-## 🚀 Usage
-
-### Prerequisites
-```bash
-pip install torch torchvision opencv-python matplotlib scikit-learn seaborn torchinfo
