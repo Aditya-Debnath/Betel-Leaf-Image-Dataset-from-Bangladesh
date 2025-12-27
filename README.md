@@ -1,66 +1,70 @@
-# Betel Leaf Image Dataset From Bangladesh
 
-Description: The Betel Leaf Image dataset is a curated collection of original and augmented images of betel leaves, categorized into healthy and diseased conditions. The dataset primarily focuses on the cultivation context of Bangladesh and covers common leaf impairments such as Bacterial leaf disease, Dried leaf, Fungal Brown spot disease, Healthy leaf.
+# Betel Leaf Disease Classification using Deep Learning
 
-Categories: There are 4 classes in this dataset
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Bacterial leaf disease: 250 images 
+## 📌 Project Overview
+Betel leaf (*Piper betle L.*) is a significant cash crop in South and Southeast Asia. However, it is highly susceptible to diseases like Bacterial Leaf Spot, Foot Rot, and Fungal Brown Spot, which cause substantial economic losses. Traditional manual diagnosis is labor-intensive and subjective.
 
-Dried leaf: 250 images 
+This project presents a comprehensive comparative study of **12 deep learning architectures** to automate the detection of betel leaf diseases. We propose a novel **Custom Hybrid CNN-Swin Transformer** that achieves state-of-the-art performance by synergizing local feature extraction (CNN) with global context modeling (Transformers).
 
-Fungal Brown spot disease: 250 images 
+## 🎯 Objectives
+*   **Evaluate Baselines:** Compare custom CNNs against standard Transfer Learning models (InceptionV3, ResNet, etc.).
+*   **Enhance Performance:** Integrate attention mechanisms (CBAM, SE-Blocks) and Transformer architectures.
+*   **Ensure Robustness:** Test models on both balanced and highly imbalanced datasets.
+*   **Explainability:** Implement Explainable AI (XAI) using Grad-CAM to visualize decision boundaries.
 
-Healthy leaf: 250 images 
+## 📂 Dataset
+The study utilizes two datasets derived from the "Betel Leaf Image Dataset from Bangladesh":
+1.  **Dataset 1 (Balanced):** 1,000 images (250 per class) used for training and primary benchmarking.
+2.  **Dataset 2 (Imbalanced):** A larger, real-world dataset used to test model robustness and generalization.
 
-Total images 1000 
+## Links of dataset
+**Dataset 1 (Balanced)** link : https://data.mendeley.com/datasets/g7fpgj57wc/2
+**Dataset 2 (Imbalanced)** link : https://data.mendeley.com/datasets/vpzkntzjty/1
 
-Dataset link : https://data.mendeley.com/datasets/g7fpgj57wc/2
+**Classes:**
+1.  Bacterial Leaf Disease
+2.  Dried Leaf
+3.  Fungal Brown Spot Disease
+4.  Healthy Leaf
 
-Performance Overview : We evaluated several state-of-the-art pre-trained deep learning models to identify the optimal architecture for this specific task of Betel leaf image dataset from Bangladesh.
+## 🏗️ Methodologies & Architectures
+We implemented and evaluated three categories of models:
 
-Tested Architectures 
+### 1. Transfer Learning Baselines
+Pre-trained models on ImageNet, fine-tuned for this specific task:
+*   *InceptionV3, ResNet50, MobileNetV2, DenseNet121, EfficientNet-B0, Xception, VGG16, AlexNet.*
 
-The following models were benchmarked and show their accuracy :
+### 2. Custom Implementations
+*   **Custom Sequential CNN:** A standard baseline lightweight network.
+*   **BLCNN (Betel Leaf CNN):** Domain-specific architecture with depth-wise separable convolutions.
 
-Alexnet : 92%
+### 3. Advanced Attention & Hybrid Models
+*   **Hybrid CNN-Swin Transformer:** Fuses a CNN stem with Swin Transformer blocks (Window-based Multi-head Self-Attention).
+*   **CBAM-CNN:** Integrates Convolutional Block Attention Modules (Spatial + Channel attention).
+*   **SE-ResNet / SE-Custom:** Enhances architectures with Squeeze-and-Excitation blocks.
 
-DenseNet121 : 94%
+## 📊 Results
+The models were evaluated based on Accuracy, F1-Score, and Training Time.
 
-EfficientNet : 87%
+| Model Architecture | Test Accuracy | Observations |
+|--------------------|---------------|--------------|
+| **Hybrid CNN-Swin**| **98.0%**     | **Best Overall.** Excellent generalization on imbalanced data (93%). |
+| CBAM-CNN           | 97.3%         | Strong focus on lesion textures due to spatial attention. |
+| InceptionV3        | 96.7%         | Best standard Transfer Learning model. Fast and stable. |
+| ResNet50           | 95.0%         | Reliable, but slightly heavier computation. |
+| MobileNetV2        | 94.0%         | Good balance of speed and accuracy. |
+| Custom CNN         | 90.0%         | Good baseline but struggles with subtle texture differences. |
 
-InceptionV3 : 97%
+## 🧠 Explainable AI (XAI)
+We utilized **Grad-CAM** to verify that the models focus on the actual diseased regions of the leaf rather than background noise. The Hybrid Swin Transformer showed the most precise localization of necrotic spots and bacterial lesions.
 
-MobileNetV2 : 94%
+## 🚀 Usage
 
-VGG16 : 91%
-
-ResNet50 : 95%
-
-Xception : 89%
-
-Custom CNN : 90%
-
-BLCNN : 88.70%
-
-CBAM-CNN : 97.33%
-
-SE-Resnet : 88%
-
-SE-Custom CNN : 95%
-
-Custom Hybrid CNN-Swin Transformer (winner) : 98%
-
-Methodology : To ensure robustness, each model was tested across a spectrum of data distributions. We utilized distinct Train-Test splits to validate generalizability, with a primary focus on the 70:30 distribution.
-
-Conclusion & Key Findings:
-
-While several models showed strong performance, Custom Hybrid CNN-Swin Transformer proved to be the most effective model for our dataset.
-
-Best Model :	 Custom Hybrid CNN-Swin Transformer
-
-
-Highest Accuracy :	98.00%
-
-Best Split Ratio :	70:30
-
-Custom Hybrid CNN-Swin Transformer was selected for the final deployment due to its excellent balance of feature extraction capabilities and overall classification accuracy on the Betel leaf dataset.
+### Prerequisites
+```bash
+pip install torch torchvision opencv-python matplotlib scikit-learn seaborn torchinfo
