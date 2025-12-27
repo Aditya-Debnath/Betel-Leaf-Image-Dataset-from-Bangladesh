@@ -23,8 +23,8 @@ The study utilizes two datasets derived from the "Betel Leaf Image Dataset from 
 2.  **Dataset 2 (Imbalanced):** A larger, real-world dataset used to test model robustness and generalization.
 
 ## Links of dataset
-**Dataset 1 (Balanced)** link : https://data.mendeley.com/datasets/g7fpgj57wc/2
-**Dataset 2 (Imbalanced)** link : https://data.mendeley.com/datasets/vpzkntzjty/1
+* **Dataset 1 (Balanced)** link : https://data.mendeley.com/datasets/g7fpgj57wc/2
+* **Dataset 2 (Imbalanced)** link : https://data.mendeley.com/datasets/vpzkntzjty/1
 
 **Classes:**
 1.  Bacterial Leaf Disease
